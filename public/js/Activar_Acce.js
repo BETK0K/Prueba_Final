@@ -152,63 +152,62 @@ onload = function () {
 
         }
     }
-}
 
-function onClickDesactivar(event) {
-    if (event.target.id == "desactivar") {
-        document.getElementById("activar").style.display = "block";
-        document.getElementById("desactivar").style.display = "none";
-        document.getElementById("play").style.display = "none";
-        synth.cancel();
-        const botones = document.querySelectorAll("button");
+    function onClickDesactivar(event) {
+        if (event.target.id == "desactivar") {
+            document.getElementById("activar").style.display = "block";
+            document.getElementById("desactivar").style.display = "none";
+            document.getElementById("play").style.display = "none";
+            synth.cancel();
+            const botones = document.querySelectorAll("button");
 
-        for (var i = 0; i < botones.length; i++) {
-            let btnplay = document.getElementById(`play${i}`);
-            if (btnplay) btnplay.className = 'btn3';
-            let btnpause = document.getElementById(`pause${i}`);
-            if (btnpause) btnpause.className = 'btn3';
+            for (var i = 0; i < botones.length; i++) {
+                let btnplay = document.getElementById(`play${i}`);
+                if (btnplay) btnplay.className = 'btn3';
+                let btnpause = document.getElementById(`pause${i}`);
+                if (btnpause) btnpause.className = 'btn3';
 
-            let btnstop = document.getElementById(`stop${i}`)
-            if (btnstop) btnstop.className = 'btn3';
+                let btnstop = document.getElementById(`stop${i}`)
+                if (btnstop) btnstop.className = 'btn3';
+            }
         }
     }
-}
 
-function onClickActivarSeleccion(event) {
-    if (event.target.id == "activarSeleccion") {
-        document.getElementById("activarSeleccion").style.display = "none";
-        document.getElementById("desactivarSeleccion").style.display = "block";
+    function onClickActivarSeleccion(event) {
+        if (event.target.id == "activarSeleccion") {
+            document.getElementById("activarSeleccion").style.display = "none";
+            document.getElementById("desactivarSeleccion").style.display = "block";
+        }
     }
-}
 
-function onClickDesactivarSeleccion(event) {
-    if (event.target.id == "desactivarSeleccion") {
-        document.getElementById("activarSeleccion").style.display = "block";
-        document.getElementById("desactivarSeleccion").style.display = "none";
+    function onClickDesactivarSeleccion(event) {
+        if (event.target.id == "desactivarSeleccion") {
+            document.getElementById("activarSeleccion").style.display = "block";
+            document.getElementById("desactivarSeleccion").style.display = "none";
+        }
     }
-}
 
-function onClickPlay(event) {
-    if (event.target.id == "btn_play") {
-        document.getElementById("btn_play").style.display = "none";
-        document.getElementById("btn_pause").style.display = "block";
-        document.getElementById("btn_stop").style.display = "block";
+    function onClickPlay(event) {
+        if (event.target.id == "btn_play") {
+            document.getElementById("btn_play").style.display = "none";
+            document.getElementById("btn_pause").style.display = "block";
+            document.getElementById("btn_stop").style.display = "block";
+        }
     }
-}
 
-function onClickPause(event) {
-    if (event.target.id == "btn_pause") {
-        document.getElementById("btn_play").style.display = "block";
-        document.getElementById("btn_pause").style.display = "none";
-        document.getElementById("btn_stop").style.display = "none";
+    function onClickPause(event) {
+        if (event.target.id == "btn_pause") {
+            document.getElementById("btn_play").style.display = "block";
+            document.getElementById("btn_pause").style.display = "none";
+            document.getElementById("btn_stop").style.display = "none";
+        }
     }
-}
 
-function onClickStop(event) {
-    if (event.target.id == "btn_stop") {
-        document.getElementById("btn_play").style.display = "block";
-        document.getElementById("btn_pause").style.display = "none";
-        document.getElementById("btn_stop").style.display = "none";
+    function onClickStop(event) {
+        if (event.target.id == "btn_stop") {
+            document.getElementById("btn_play").style.display = "block";
+            document.getElementById("btn_pause").style.display = "none";
+            document.getElementById("btn_stop").style.display = "none";
+        }
     }
-}
-
+}();

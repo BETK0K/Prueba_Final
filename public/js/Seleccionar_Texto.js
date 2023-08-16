@@ -40,16 +40,16 @@ onload = function() {
             const btnStopHeight = Number(getComputedStyle(btnstop).height.slice(0,-2));
       
             if(document.activeElement !== btnplay && document.activeElement !== btnpause && document.activeElement !== btnstop ) {
-              btnplay.style.left = `${x - btnPlayWidth}px`;
-              btnplay.style.top = `${y - btnPlayHeight}px`;
+              btnplay.style.left = `${x - btnPlayWidth*-0.8}px`;
+              btnplay.style.top = `${y - btnPlayHeight* 1.25}px`;
               btnplay.style.display = "block";
               btnplay.classList.add("btnEntrance");
               
-              btnpause.style.left = `${x - btnPauseWidth}px`;
-              btnpause.style.top = `${y - btnPauseHeight}px`;
+              btnpause.style.left = `${x - btnPauseWidth*-0.8}px`;
+              btnpause.style.top = `${y - btnPauseHeight* 1.25}px`;
               
-              btnstop.style.left = `${x - btnStopWidth}px`;
-              btnstop.style.top = `${y - btnStopHeight}px`;
+              btnstop.style.left = `${x - btnStopWidth*-0.8}px`;
+              btnstop.style.top = `${y - btnStopHeight* 1.25}px`;
             }
             else {
               btnplay.style.left = `${x-btnPlayWidth*0.5}px`;

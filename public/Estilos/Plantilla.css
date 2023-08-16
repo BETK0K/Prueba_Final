@@ -208,7 +208,7 @@ footer {
     display: none;
 }
 .container{
-    position: fixed;
+    position: relative;
     bottom: 20px;
 }
 .Acces-voz button, .btn-mas label{
